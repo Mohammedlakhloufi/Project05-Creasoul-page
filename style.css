@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+* {
+    box-sizing: border-box;
+  }
+body{
+    background-color:#F2F1F4;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+/****** Mobile design first******/
+
+/***Header***/
+header{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+header img{
+    width: 15%;
+    height: 15%;
+}
+nav{
+    background-color: #28AC95;
+    padding: 10px auto; 
+    text-align: center;
+}
+nav ul{
+    padding: 0px;
+}
+nav ul li{
+    margin: 10px auto; 
+    padding: 15px 0px;  
+    list-style: none;
+    text-align: center;
+
+}
+nav ul li a{
+    padding: 10px;   
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    font-size: 1.2em;
+}
+/*** main ***/
+main{
+   width: 80%;
+   margin: auto;
+}
+/* section */
+h1,h2{
+    color: #28AC95;
+    text-transform: uppercase;
+}
+hr{
+    border-top: 1px solid #28AC95;
+}
+
+p{
+    color: gray;
+    text-align: justify;
+}
+.ImgMobile{
+    width: 100%;
+    height: auto;
+}
+.ImgTablet,.ImgDesktop{
+    display: none;
+}
+/* aside */
+aside{
+    background-color: #74D5A2;
+    padding: 10px 15px;
+    display: none;
+}
+/*** footer ***/
+footer{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+footer img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+footer p {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0 auto;
+}
+footer p a{
+    color: #28AC95;
+    text-decoration: none;
+}
+/****** Tablet design specifity******/
+@media screen and (min-width: 768px){
+    .ImgMobile{
+        display: none;
+    }
+    .ImgTablet{
+       display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    aside{
+        display: block;
+    }
+    
+}
+/****** Desktop design specifity ******/
+@media screen and (min-width: 1024px){
+    nav ul li{
+        display: inline-block;
+        margin: auto 45px;
+    }
+    section,aside{
+        display: inline-block;
+        vertical-align: top;
+    }
+    section{
+        width: 70%;
+        margin-right: 0.29vw;
+    }
+    aside{
+        width: 29.2%;
+    }
+    nav ul{
+        margin: 0 auto;
+    }
+    .ImgTablet{
+        display: none;
+    }
+    .ImgDesktop{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    
+}
